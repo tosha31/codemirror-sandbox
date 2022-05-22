@@ -20,9 +20,17 @@
     <textarea id="editor">
         <h1>Hello World</h1>
         var git = require('git-rev-sync');
+        function fakeFunction() {
+            console.log('Hello World');
+        }
     </textarea>
     </section>
+    <section>
 
+    </section>
+    <section>
+        
+    </section>
 
     <script>
         var editor = CodeMirror.fromTextArea
@@ -30,7 +38,7 @@
                 mode: 'javascript',
                 theme: 'cobalt',
                 lineNumbers: true,
-                lineWrapping: true
+              //  
             });
         
     </script>
