@@ -1,63 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <script src="node_modules/codemirror/lib/codemirror.js"></script>
-    <link rel="stylesheet" href="node_modules/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="node_modules/codemirror/lib/codemirror.css" />
     <script src="node_modules/codemirror/mode/javascript/javascript.js"></script>
-    <link rel="stylesheet" href="node_modules/codemirror/theme/cobalt.css">
+    <link rel="stylesheet" href="node_modules/codemirror/theme/cobalt.css" />
     <script src="script.js"></script>
 
     <title>Document</title>
-  
-
-</head>
-<body>
-
-
-
+  </head>
+  <body>
     <section class="header">
-        <div>
-
-        </div>
+      <div></div>
     </section>
     <section>
-    <textarea id="editor">
+      <textarea id="editor">
         <h1>Hello World</h1>
         var git = require('git-rev-sync');
         function fakeFunction() {
             console.log('Hello World');
         }
-    </textarea>
+    </textarea
+      >
     </section>
     <section>
-        <div>
-
-        </div>
+      <div></div>
     </section>
     <section>
+      <div>
         <div>
-
+          <button id="run">Run</button>
         </div>
+      </div>
     </section>
     <footer>
-        <div>
-            <p></p><p></p><p></p>
-        </div>
+      <div>
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
     </footer>
 
     <script>
-        var editor = CodeMirror.fromTextArea
-            (document.getElementById('editor'), {
-                mode: 'javascript',
-                theme: 'cobalt',
-                lineNumbers: true,
-              //  
-            });
-        
+      var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
+        mode: "javascript",
+        theme: "cobalt",
+        lineNumbers: true,
+        //
+      });
     </script>
-</body>
+  </body>
 </html>
